@@ -16,7 +16,7 @@ Built with Python, [CustomTkinter](https://github.com/TomSchimansky/CustomTkinte
 
 ## Download (no Python required)
 
-Pre-built binaries are attached to [GitHub Releases](https://github.com/aonpa/Free-Proxy-Checker/releases) when the build workflow completes:
+Pre-built binaries are on [GitHub Releases](https://github.com/aonpa/Free-Proxy-Checker/releases). A new release is published when you push a version tag (`v1.0.0`, `v1.0.1`, …) or run the **Release** workflow manually from the Actions tab.
 
 | Platform | File |
 |----------|------|
@@ -70,6 +70,15 @@ python main.py
 - Optional scheme: `http://…` or `https://…` (otherwise HTTP is assumed)
 
 Lines without `:` are skipped.
+
+## Publish a release (maintainers)
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+Or: **Actions** → **Release** → **Run workflow** → enter the same tag (for example `v1.0.0`).
 
 ## Build locally
 
